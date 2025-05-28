@@ -1,7 +1,7 @@
 import requests
 import os
 
-BASE_URL = os.getenv("API_BASE", "http://localhost:10000")
+BASE_URL = os.getenv("API_BASE", "http://localhost:4000")
 
 # --- AUTH TESTS ---
 def test_signup_success():

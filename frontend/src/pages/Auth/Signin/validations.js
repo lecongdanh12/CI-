@@ -1,18 +1,12 @@
-import * as yup from "yup";
+import * as Yup from "yup";
 
-const validations = yup.object().shape({
-  email: yup
-    .string()
-    .email("Email không hợp lệ")
-    .required("Email là bắt buộc"),
-  password: yup
-    .string()
-    .min(5, "Mật khẩu phải có ít nhất 5 ký tự.")
-    .required("Mật khẩu là bắt buộc"),
-  passwordConfirm: yup
-    .string()
-    .oneOf([yup.ref("password")], "Mật khẩu xác nhận không khớp")
-    .required("Xác nhận mật khẩu là bắt buộc"),
+const validationSchema = Yup.object({
+  email: Yup.string()
+    .email("Invalid email format")
+    .required("Email is required"),
+  password: Yup.string()
+    .min(6, "Password must be at least 6 characters")
+    .required("Password is required"),
 });
 
-export default validations;
+export default validationSchema;

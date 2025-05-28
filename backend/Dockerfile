@@ -18,6 +18,7 @@ COPY . .
 EXPOSE 10000
 
 # Build the app
+RUN npm install -g nodemon
 RUN npm run build
 
 # Define the command to run your application

@@ -1,0 +1,60 @@
+name: E-commerce CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    services:
+      mongo:
+        image: mongo:latest
+        ports: [27017:27017]
+        options: >-
+          --health-cmd "mongo --eval 'db.runCommand({ ping: 1 })'" \
+          --health-interval 10s --health-timeout 5s --health-retries 5
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build containers
+        run: docker-compose build
+
+      - name: Start backend, frontend, and mongo
+        run: docker-compose up -d
+
+      - name: Wait for backend to be ready
+        run: |
+          for i in {1..30}; do
+            nc -zv localhost 4000 && break
+            sleep 2
+          done
+
+      - name: Run backend tests (pytest + coverage)
+        run: docker-compose run --rm backend-test || true
+
+      - name: Run frontend tests (Jest + coverage)
+        run: docker-compose run --rm frontend-test || true
+
+      - name: Upload backend test log
+        uses: actions/upload-artifact@v4
+        with:
+          name: backend-logs
+          path: backend/logs/
+
+      - name: Upload frontend test reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: frontend-reports
+          path: |
+            frontend/html-report/
+            frontend/jest-stare/
+            frontend/coverage/

@@ -89,7 +89,7 @@
                 <canvas id="test-suites-canvas" width="100" height="100"></canvas>
                 <h2>Test Suites</h2>
                 <div class="list-group">
-                    <p id="test-suites-results" class="list-group-item list-group-item-action">4 passed, 4 total</p>
+                    <p id="test-suites-results" class="list-group-item list-group-item-action">3 passed, 5 total</p>
                 </div>
             </div>
             <!-- /.col-lg-4 -->
@@ -97,7 +97,7 @@
                 <canvas id="tests-canvas" width="100" height="100"></canvas>
                 <h2>Tests</h2>
                 <div class="list-group">
-                    <p id="tests-results" class="list-group-item list-group-item-action">19 passed, 19 total</p>
+                    <p id="tests-results" class="list-group-item list-group-item-action">16 passed, 23 total</p>
                 </div>
             </div>
             <!-- /.col-lg-4 -->
@@ -127,16 +127,16 @@
 }</div>
         <div id="accordion">
             <div class="d-none" id="test-results">{
-  &quot;numFailedTestSuites&quot;: 0,
-  &quot;numFailedTests&quot;: 0,
-  &quot;numPassedTestSuites&quot;: 4,
-  &quot;numPassedTests&quot;: 19,
+  &quot;numFailedTestSuites&quot;: 2,
+  &quot;numFailedTests&quot;: 7,
+  &quot;numPassedTestSuites&quot;: 3,
+  &quot;numPassedTests&quot;: 16,
   &quot;numPendingTestSuites&quot;: 0,
   &quot;numPendingTests&quot;: 0,
   &quot;numRuntimeErrorTestSuites&quot;: 0,
   &quot;numTodoTests&quot;: 0,
-  &quot;numTotalTestSuites&quot;: 4,
-  &quot;numTotalTests&quot;: 19,
+  &quot;numTotalTestSuites&quot;: 5,
+  &quot;numTotalTests&quot;: 23,
   &quot;openHandles&quot;: [],
   &quot;snapshot&quot;: {
     &quot;added&quot;: 0,
@@ -154,21 +154,21 @@
     &quot;unmatched&quot;: 0,
     &quot;updated&quot;: 0
   },
-  &quot;startTime&quot;: 1748457880685,
+  &quot;startTime&quot;: 1748472602901,
   &quot;success&quot;: false,
   &quot;testResults&quot;: [
     {
       &quot;leaks&quot;: false,
       &quot;numFailingTests&quot;: 0,
-      &quot;numPassingTests&quot;: 5,
+      &quot;numPassingTests&quot;: 6,
       &quot;numPendingTests&quot;: 0,
       &quot;numTodoTests&quot;: 0,
       &quot;openHandles&quot;: [],
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 1748457887551,
-        &quot;runtime&quot;: 3815,
+        &quot;end&quot;: 1748472612424,
+        &quot;runtime&quot;: 3123,
         &quot;slow&quot;: false,
-        &quot;start&quot;: 1748457883736
+        &quot;start&quot;: 1748472609301
       },
       &quot;skipped&quot;: false,
       &quot;snapshot&quot;: {
@@ -180,76 +180,91 @@
         &quot;unmatched&quot;: 0,
         &quot;updated&quot;: 0
       },
-      &quot;testFilePath&quot;: &quot;C:\\e-commerce-for-testing\\frontend\\src\\pages\\Auth\\Signin\\validations.test.js&quot;,
+      &quot;testFilePath&quot;: &quot;C:\\e-commerce-for-testing\\frontend\\src\\pages\\Products\\validations.test.js&quot;,
       &quot;testResults&quot;: [
         {
           &quot;ancestorTitles&quot;: [
-            &quot;Signin Form Validation&quot;
+            &quot;Product Edit Form Validation&quot;
           ],
-          &quot;duration&quot;: 23,
+          &quot;duration&quot;: 39,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;Signin Form Validation should require email and password&quot;,
+          &quot;fullName&quot;: &quot;Product Edit Form Validation should require all fields&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 1,
           &quot;retryReasons&quot;: [],
           &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;should require email and password&quot;
+          &quot;title&quot;: &quot;should require all fields&quot;
         },
         {
           &quot;ancestorTitles&quot;: [
-            &quot;Signin Form Validation&quot;
+            &quot;Product Edit Form Validation&quot;
+          ],
+          &quot;duration&quot;: 9,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Product Edit Form Validation should require title at least 3 characters&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 1,
+          &quot;retryReasons&quot;: [],
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;should require title at least 3 characters&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Product Edit Form Validation&quot;
+          ],
+          &quot;duration&quot;: 5,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Product Edit Form Validation should require description at least 5 characters&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 1,
+          &quot;retryReasons&quot;: [],
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;should require description at least 5 characters&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Product Edit Form Validation&quot;
+          ],
+          &quot;duration&quot;: 7,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Product Edit Form Validation should require price to be a positive number&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 2,
+          &quot;retryReasons&quot;: [],
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;should require price to be a positive number&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Product Edit Form Validation&quot;
+          ],
+          &quot;duration&quot;: 10,
+          &quot;failureDetails&quot;: [],
+          &quot;failureMessages&quot;: [],
+          &quot;fullName&quot;: &quot;Product Edit Form Validation should require at least one valid photo url&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 2,
+          &quot;retryReasons&quot;: [],
+          &quot;status&quot;: &quot;passed&quot;,
+          &quot;title&quot;: &quot;should require at least one valid photo url&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Product Edit Form Validation&quot;
           ],
           &quot;duration&quot;: 2,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;Signin Form Validation should require valid email format&quot;,
-          &quot;invocations&quot;: 1,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 1,
-          &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;should require valid email format&quot;
-        },
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;Signin Form Validation&quot;
-          ],
-          &quot;duration&quot;: 2,
-          &quot;failureDetails&quot;: [],
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;Signin Form Validation should require password at least 5 characters&quot;,
-          &quot;invocations&quot;: 1,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 1,
-          &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;should require password at least 5 characters&quot;
-        },
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;Signin Form Validation&quot;
-          ],
-          &quot;duration&quot;: 3,
-          &quot;failureDetails&quot;: [],
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;Signin Form Validation should require passwordConfirm to match password&quot;,
-          &quot;invocations&quot;: 1,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 1,
-          &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;should require passwordConfirm to match password&quot;
-        },
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;Signin Form Validation&quot;
-          ],
-          &quot;duration&quot;: 1,
-          &quot;failureDetails&quot;: [],
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;Signin Form Validation should pass with valid data&quot;,
+          &quot;fullName&quot;: &quot;Product Edit Form Validation should pass with valid data&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 1,
@@ -268,10 +283,10 @@
       &quot;numTodoTests&quot;: 0,
       &quot;openHandles&quot;: [],
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 1748457887551,
-        &quot;runtime&quot;: 3816,
+        &quot;end&quot;: 1748472612637,
+        &quot;runtime&quot;: 3338,
         &quot;slow&quot;: false,
-        &quot;start&quot;: 1748457883735
+        &quot;start&quot;: 1748472609299
       },
       &quot;skipped&quot;: false,
       &quot;snapshot&quot;: {
@@ -289,7 +304,7 @@
           &quot;ancestorTitles&quot;: [
             &quot;Signup Form Validation&quot;
           ],
-          &quot;duration&quot;: 23,
+          &quot;duration&quot;: 25,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Signup Form Validation should require email and password&quot;,
@@ -304,7 +319,7 @@
           &quot;ancestorTitles&quot;: [
             &quot;Signup Form Validation&quot;
           ],
-          &quot;duration&quot;: 2,
+          &quot;duration&quot;: 3,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;Signup Form Validation should require valid email format&quot;,
@@ -365,16 +380,16 @@
     },
     {
       &quot;leaks&quot;: false,
-      &quot;numFailingTests&quot;: 0,
-      &quot;numPassingTests&quot;: 6,
+      &quot;numFailingTests&quot;: 3,
+      &quot;numPassingTests&quot;: 2,
       &quot;numPendingTests&quot;: 0,
       &quot;numTodoTests&quot;: 0,
       &quot;openHandles&quot;: [],
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 1748457887573,
-        &quot;runtime&quot;: 3838,
+        &quot;end&quot;: 1748472612717,
+        &quot;runtime&quot;: 3417,
         &quot;slow&quot;: false,
-        &quot;start&quot;: 1748457883735
+        &quot;start&quot;: 1748472609300
       },
       &quot;skipped&quot;: false,
       &quot;snapshot&quot;: {
@@ -386,100 +401,215 @@
         &quot;unmatched&quot;: 0,
         &quot;updated&quot;: 0
       },
-      &quot;testFilePath&quot;: &quot;C:\\e-commerce-for-testing\\frontend\\src\\pages\\Products\\validations.test.js&quot;,
+      &quot;testFilePath&quot;: &quot;C:\\e-commerce-for-testing\\frontend\\src\\pages\\Auth\\Signin\\validations.test.js&quot;,
       &quot;testResults&quot;: [
         {
           &quot;ancestorTitles&quot;: [
-            &quot;Product Edit Form Validation&quot;
+            &quot;Signin Form Validation&quot;
           ],
-          &quot;duration&quot;: 24,
+          &quot;duration&quot;: 28,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;Product Edit Form Validation should require all fields&quot;,
+          &quot;fullName&quot;: &quot;Signin Form Validation should require email and password&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 1,
           &quot;retryReasons&quot;: [],
           &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;should require all fields&quot;
+          &quot;title&quot;: &quot;should require email and password&quot;
         },
         {
           &quot;ancestorTitles&quot;: [
-            &quot;Product Edit Form Validation&quot;
+            &quot;Signin Form Validation&quot;
           ],
-          &quot;duration&quot;: 5,
+          &quot;duration&quot;: 26,
+          &quot;failureDetails&quot;: [
+            {
+              &quot;matcherResult&quot;: {
+                &quot;message&quot;: &quot;\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mrejects\u001b[2m.\u001b[22mtoThrow\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m&#x2F;Email không hợp lệ&#x2F;\u001b[39m\nReceived message: \u001b[31m\&quot;Password must be at least 6 characters\&quot;\u001b[39m\n\n    \u001b[0m \u001b[90m  7 |\u001b[39m\n     \u001b[90m  8 |\u001b[39m   it(\u001b[32m\&quot;should require valid email format\&quot;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\n    \u001b[31m\u001b[1m&gt;\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m expect(validations\u001b[33m.\u001b[39mvalidate({ email\u001b[33m:\u001b[39m \u001b[32m\&quot;invalid\&quot;\u001b[39m\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m \u001b[32m\&quot;12345\&quot;\u001b[39m\u001b[33m,\u001b[39m passwordConfirm\u001b[33m:\u001b[39m \u001b[32m\&quot;12345\&quot;\u001b[39m }))\u001b[33m.\u001b[39mrejects\u001b[33m.\u001b[39mtoThrow(\u001b[35m&#x2F;Email không hợp lệ&#x2F;\u001b[39m)\u001b[33m;\u001b[39m\n     \u001b[90m    |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n     \u001b[90m 10 |\u001b[39m   })\u001b[33m;\u001b[39m\n     \u001b[90m 11 |\u001b[39m\n     \u001b[90m 12 |\u001b[39m   it(\u001b[32m\&quot;should require password at least 5 characters\&quot;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\u001b[0m\n\n      \u001b[2mat createError (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:351:21)\u001b[22m\n      \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:104)\u001b[22m\n      \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n      \u001b[2mat StringSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:711:12\u001b[22m\n      \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n      \u001b[2mat finishTestRun (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:761:11)\u001b[22m\n      \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:124)\u001b[22m\n      \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n      \u001b[2mat StringSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat StringSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:700:10)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:795:58\u001b[22m\n      \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:1861:12\u001b[22m\n      \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n      \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:746:24)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:711:12\u001b[22m\n      \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n      \u001b[2mat finishTestRun (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:761:11)\u001b[22m\n      \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:124)\u001b[22m\n      \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n      \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat ObjectSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:700:10)\u001b[22m\n      \u001b[2mat ObjectSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:1841:11)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:803:52\u001b[22m\n      \u001b[2mat ObjectSchema.validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:803:12)\u001b[22m\n      \u001b[2mat Object.validate (\u001b[22msrc&#x2F;pages&#x2F;Auth&#x2F;Signin&#x2F;validations.test.js\u001b[2m:9:30)\u001b[22m&quot;,
+                &quot;pass&quot;: false
+              },
+              &quot;message&quot;: &quot;\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mrejects\u001b[2m.\u001b[22mtoThrow\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m&#x2F;Email không hợp lệ&#x2F;\u001b[39m\nReceived message: \u001b[31m\&quot;Password must be at least 6 characters\&quot;\u001b[39m\n\n    \u001b[0m \u001b[90m  7 |\u001b[39m\n     \u001b[90m  8 |\u001b[39m   it(\u001b[32m\&quot;should require valid email format\&quot;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\n    \u001b[31m\u001b[1m&gt;\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m expect(validations\u001b[33m.\u001b[39mvalidate({ email\u001b[33m:\u001b[39m \u001b[32m\&quot;invalid\&quot;\u001b[39m\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m \u001b[32m\&quot;12345\&quot;\u001b[39m\u001b[33m,\u001b[39m passwordConfirm\u001b[33m:\u001b[39m \u001b[32m\&quot;12345\&quot;\u001b[39m }))\u001b[33m.\u001b[39mrejects\u001b[33m.\u001b[39mtoThrow(\u001b[35m&#x2F;Email không hợp lệ&#x2F;\u001b[39m)\u001b[33m;\u001b[39m\n     \u001b[90m    |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n     \u001b[90m 10 |\u001b[39m   })\u001b[33m;\u001b[39m\n     \u001b[90m 11 |\u001b[39m\n     \u001b[90m 12 |\u001b[39m   it(\u001b[32m\&quot;should require password at least 5 characters\&quot;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\u001b[0m\n\n      \u001b[2mat createError (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:351:21)\u001b[22m\n      \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:104)\u001b[22m\n      \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n      \u001b[2mat StringSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:711:12\u001b[22m\n      \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n      \u001b[2mat finishTestRun (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:761:11)\u001b[22m\n      \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:124)\u001b[22m\n      \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n      \u001b[2mat StringSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat StringSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:700:10)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:795:58\u001b[22m\n      \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:1861:12\u001b[22m\n      \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n      \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:746:24)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:711:12\u001b[22m\n      \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n      \u001b[2mat finishTestRun (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:761:11)\u001b[22m\n      \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:124)\u001b[22m\n      \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n      \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat ObjectSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:700:10)\u001b[22m\n      \u001b[2mat ObjectSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:1841:11)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:803:52\u001b[22m\n      \u001b[2mat ObjectSchema.validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:803:12)\u001b[22m\n      \u001b[2mat Object.validate (\u001b[22msrc&#x2F;pages&#x2F;Auth&#x2F;Signin&#x2F;validations.test.js\u001b[2m:9:30)\u001b[22m&quot;
+            }
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mrejects\u001b[2m.\u001b[22mtoThrow\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m&#x2F;Email không hợp lệ&#x2F;\u001b[39m\nReceived message: \u001b[31m\&quot;Password must be at least 6 characters\&quot;\u001b[39m\n\n    \u001b[0m \u001b[90m  7 |\u001b[39m\n     \u001b[90m  8 |\u001b[39m   it(\u001b[32m\&quot;should require valid email format\&quot;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\n    \u001b[31m\u001b[1m&gt;\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m expect(validations\u001b[33m.\u001b[39mvalidate({ email\u001b[33m:\u001b[39m \u001b[32m\&quot;invalid\&quot;\u001b[39m\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m \u001b[32m\&quot;12345\&quot;\u001b[39m\u001b[33m,\u001b[39m passwordConfirm\u001b[33m:\u001b[39m \u001b[32m\&quot;12345\&quot;\u001b[39m }))\u001b[33m.\u001b[39mrejects\u001b[33m.\u001b[39mtoThrow(\u001b[35m&#x2F;Email không hợp lệ&#x2F;\u001b[39m)\u001b[33m;\u001b[39m\n     \u001b[90m    |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n     \u001b[90m 10 |\u001b[39m   })\u001b[33m;\u001b[39m\n     \u001b[90m 11 |\u001b[39m\n     \u001b[90m 12 |\u001b[39m   it(\u001b[32m\&quot;should require password at least 5 characters\&quot;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\u001b[0m\n\n      \u001b[2mat createError (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:351:21)\u001b[22m\n      \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:104)\u001b[22m\n      \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n      \u001b[2mat StringSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:711:12\u001b[22m\n      \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n      \u001b[2mat finishTestRun (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:761:11)\u001b[22m\n      \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:124)\u001b[22m\n      \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n      \u001b[2mat StringSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat StringSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:700:10)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:795:58\u001b[22m\n      \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:1861:12\u001b[22m\n      \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n      \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:746:24)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:711:12\u001b[22m\n      \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n      \u001b[2mat finishTestRun (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:761:11)\u001b[22m\n      \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:124)\u001b[22m\n      \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n      \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat ObjectSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:700:10)\u001b[22m\n      \u001b[2mat ObjectSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:1841:11)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:803:52\u001b[22m\n      \u001b[2mat ObjectSchema.validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:803:12)\u001b[22m\n      \u001b[2mat Object.validate (\u001b[22msrc&#x2F;pages&#x2F;Auth&#x2F;Signin&#x2F;validations.test.js\u001b[2m:9:30)\u001b[22m\n    at Object.toThrow (C:\\e-commerce-for-testing\\frontend\\node_modules\\expect\\build\\index.js:218:22)\n    at Object.toThrow (C:\\e-commerce-for-testing\\frontend\\src\\pages\\Auth\\Signin\\validations.test.js:9:115)\n    at Promise.then.completed (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (&lt;anonymous&gt;)\n    at callAsyncCircusFn (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:105:5)\n    at _runTest (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-runner\\build\\testWorker.js:106:12)&quot;
+          ],
+          &quot;fullName&quot;: &quot;Signin Form Validation should require valid email format&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;retryReasons&quot;: [],
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;should require valid email format&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Signin Form Validation&quot;
+          ],
+          &quot;duration&quot;: 8,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;Product Edit Form Validation should require title at least 3 characters&quot;,
+          &quot;fullName&quot;: &quot;Signin Form Validation should require password at least 5 characters&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
           &quot;numPassingAsserts&quot;: 1,
           &quot;retryReasons&quot;: [],
           &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;should require title at least 3 characters&quot;
+          &quot;title&quot;: &quot;should require password at least 5 characters&quot;
         },
         {
           &quot;ancestorTitles&quot;: [
-            &quot;Product Edit Form Validation&quot;
-          ],
-          &quot;duration&quot;: 4,
-          &quot;failureDetails&quot;: [],
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;Product Edit Form Validation should require description at least 5 characters&quot;,
-          &quot;invocations&quot;: 1,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 1,
-          &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;should require description at least 5 characters&quot;
-        },
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;Product Edit Form Validation&quot;
+            &quot;Signin Form Validation&quot;
           ],
           &quot;duration&quot;: 10,
-          &quot;failureDetails&quot;: [],
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;Product Edit Form Validation should require price to be a positive number&quot;,
+          &quot;failureDetails&quot;: [
+            {
+              &quot;matcherResult&quot;: {
+                &quot;message&quot;: &quot;\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mrejects\u001b[2m.\u001b[22mtoThrow\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m&#x2F;không khớp&#x2F;\u001b[39m\nReceived message: \u001b[31m\&quot;Password must be at least 6 characters\&quot;\u001b[39m\n\n    \u001b[0m \u001b[90m 15 |\u001b[39m\n     \u001b[90m 16 |\u001b[39m   it(\u001b[32m\&quot;should require passwordConfirm to match password\&quot;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\n    \u001b[31m\u001b[1m&gt;\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(validations\u001b[33m.\u001b[39mvalidate({ email\u001b[33m:\u001b[39m \u001b[32m\&quot;test@mail.com\&quot;\u001b[39m\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m \u001b[32m\&quot;12345\&quot;\u001b[39m\u001b[33m,\u001b[39m passwordConfirm\u001b[33m:\u001b[39m \u001b[32m\&quot;54321\&quot;\u001b[39m }))\u001b[33m.\u001b[39mrejects\u001b[33m.\u001b[39mtoThrow(\u001b[35m&#x2F;không khớp&#x2F;\u001b[39m)\u001b[33m;\u001b[39m\n     \u001b[90m    |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n     \u001b[90m 18 |\u001b[39m   })\u001b[33m;\u001b[39m\n     \u001b[90m 19 |\u001b[39m\n     \u001b[90m 20 |\u001b[39m   it(\u001b[32m\&quot;should pass with valid data\&quot;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\u001b[0m\n\n      \u001b[2mat createError (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:351:21)\u001b[22m\n      \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:104)\u001b[22m\n      \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n      \u001b[2mat StringSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:711:12\u001b[22m\n      \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n      \u001b[2mat finishTestRun (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:761:11)\u001b[22m\n      \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:124)\u001b[22m\n      \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n      \u001b[2mat StringSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat StringSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:700:10)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:795:58\u001b[22m\n      \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:1861:12\u001b[22m\n      \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n      \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:746:24)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:711:12\u001b[22m\n      \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n      \u001b[2mat finishTestRun (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:761:11)\u001b[22m\n      \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:124)\u001b[22m\n      \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n      \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat ObjectSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:700:10)\u001b[22m\n      \u001b[2mat ObjectSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:1841:11)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:803:52\u001b[22m\n      \u001b[2mat ObjectSchema.validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:803:12)\u001b[22m\n      \u001b[2mat Object.validate (\u001b[22msrc&#x2F;pages&#x2F;Auth&#x2F;Signin&#x2F;validations.test.js\u001b[2m:17:30)\u001b[22m&quot;,
+                &quot;pass&quot;: false
+              },
+              &quot;message&quot;: &quot;\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mrejects\u001b[2m.\u001b[22mtoThrow\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m&#x2F;không khớp&#x2F;\u001b[39m\nReceived message: \u001b[31m\&quot;Password must be at least 6 characters\&quot;\u001b[39m\n\n    \u001b[0m \u001b[90m 15 |\u001b[39m\n     \u001b[90m 16 |\u001b[39m   it(\u001b[32m\&quot;should require passwordConfirm to match password\&quot;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\n    \u001b[31m\u001b[1m&gt;\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(validations\u001b[33m.\u001b[39mvalidate({ email\u001b[33m:\u001b[39m \u001b[32m\&quot;test@mail.com\&quot;\u001b[39m\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m \u001b[32m\&quot;12345\&quot;\u001b[39m\u001b[33m,\u001b[39m passwordConfirm\u001b[33m:\u001b[39m \u001b[32m\&quot;54321\&quot;\u001b[39m }))\u001b[33m.\u001b[39mrejects\u001b[33m.\u001b[39mtoThrow(\u001b[35m&#x2F;không khớp&#x2F;\u001b[39m)\u001b[33m;\u001b[39m\n     \u001b[90m    |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n     \u001b[90m 18 |\u001b[39m   })\u001b[33m;\u001b[39m\n     \u001b[90m 19 |\u001b[39m\n     \u001b[90m 20 |\u001b[39m   it(\u001b[32m\&quot;should pass with valid data\&quot;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\u001b[0m\n\n      \u001b[2mat createError (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:351:21)\u001b[22m\n      \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:104)\u001b[22m\n      \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n      \u001b[2mat StringSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:711:12\u001b[22m\n      \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n      \u001b[2mat finishTestRun (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:761:11)\u001b[22m\n      \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:124)\u001b[22m\n      \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n      \u001b[2mat StringSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat StringSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:700:10)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:795:58\u001b[22m\n      \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:1861:12\u001b[22m\n      \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n      \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:746:24)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:711:12\u001b[22m\n      \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n      \u001b[2mat finishTestRun (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:761:11)\u001b[22m\n      \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:124)\u001b[22m\n      \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n      \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat ObjectSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:700:10)\u001b[22m\n      \u001b[2mat ObjectSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:1841:11)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:803:52\u001b[22m\n      \u001b[2mat ObjectSchema.validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:803:12)\u001b[22m\n      \u001b[2mat Object.validate (\u001b[22msrc&#x2F;pages&#x2F;Auth&#x2F;Signin&#x2F;validations.test.js\u001b[2m:17:30)\u001b[22m&quot;
+            }
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mrejects\u001b[2m.\u001b[22mtoThrow\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m&#x2F;không khớp&#x2F;\u001b[39m\nReceived message: \u001b[31m\&quot;Password must be at least 6 characters\&quot;\u001b[39m\n\n    \u001b[0m \u001b[90m 15 |\u001b[39m\n     \u001b[90m 16 |\u001b[39m   it(\u001b[32m\&quot;should require passwordConfirm to match password\&quot;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\n    \u001b[31m\u001b[1m&gt;\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(validations\u001b[33m.\u001b[39mvalidate({ email\u001b[33m:\u001b[39m \u001b[32m\&quot;test@mail.com\&quot;\u001b[39m\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m \u001b[32m\&quot;12345\&quot;\u001b[39m\u001b[33m,\u001b[39m passwordConfirm\u001b[33m:\u001b[39m \u001b[32m\&quot;54321\&quot;\u001b[39m }))\u001b[33m.\u001b[39mrejects\u001b[33m.\u001b[39mtoThrow(\u001b[35m&#x2F;không khớp&#x2F;\u001b[39m)\u001b[33m;\u001b[39m\n     \u001b[90m    |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n     \u001b[90m 18 |\u001b[39m   })\u001b[33m;\u001b[39m\n     \u001b[90m 19 |\u001b[39m\n     \u001b[90m 20 |\u001b[39m   it(\u001b[32m\&quot;should pass with valid data\&quot;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\u001b[0m\n\n      \u001b[2mat createError (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:351:21)\u001b[22m\n      \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:104)\u001b[22m\n      \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n      \u001b[2mat StringSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:711:12\u001b[22m\n      \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n      \u001b[2mat finishTestRun (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:761:11)\u001b[22m\n      \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:124)\u001b[22m\n      \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n      \u001b[2mat StringSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat StringSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:700:10)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:795:58\u001b[22m\n      \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:1861:12\u001b[22m\n      \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n      \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:746:24)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:711:12\u001b[22m\n      \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n      \u001b[2mat finishTestRun (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:761:11)\u001b[22m\n      \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:124)\u001b[22m\n      \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n      \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n      \u001b[2mat ObjectSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:700:10)\u001b[22m\n      \u001b[2mat ObjectSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:1841:11)\u001b[22m\n      \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:803:52\u001b[22m\n      \u001b[2mat ObjectSchema.validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:803:12)\u001b[22m\n      \u001b[2mat Object.validate (\u001b[22msrc&#x2F;pages&#x2F;Auth&#x2F;Signin&#x2F;validations.test.js\u001b[2m:17:30)\u001b[22m\n    at Object.toThrow (C:\\e-commerce-for-testing\\frontend\\node_modules\\expect\\build\\index.js:218:22)\n    at Object.toThrow (C:\\e-commerce-for-testing\\frontend\\src\\pages\\Auth\\Signin\\validations.test.js:17:121)\n    at Promise.then.completed (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (&lt;anonymous&gt;)\n    at callAsyncCircusFn (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:105:5)\n    at _runTest (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-runner\\build\\testWorker.js:106:12)&quot;
+          ],
+          &quot;fullName&quot;: &quot;Signin Form Validation should require passwordConfirm to match password&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 2,
+          &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;should require price to be a positive number&quot;
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;should require passwordConfirm to match password&quot;
         },
         {
           &quot;ancestorTitles&quot;: [
-            &quot;Product Edit Form Validation&quot;
+            &quot;Signin Form Validation&quot;
           ],
           &quot;duration&quot;: 7,
-          &quot;failureDetails&quot;: [],
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;Product Edit Form Validation should require at least one valid photo url&quot;,
-          &quot;invocations&quot;: 1,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 2,
-          &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;should require at least one valid photo url&quot;
-        },
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;Product Edit Form Validation&quot;
+          &quot;failureDetails&quot;: [
+            {
+              &quot;message&quot;: &quot;\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mresolves\u001b[2m.\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived promise rejected instead of resolved\nRejected to value: \u001b[31m[ValidationError: Password must be at least 6 characters]\u001b[39m&quot;
+            }
           ],
-          &quot;duration&quot;: 1,
-          &quot;failureDetails&quot;: [],
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;Product Edit Form Validation should pass with valid data&quot;,
+          &quot;failureMessages&quot;: [
+            &quot;Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mresolves\u001b[2m.\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived promise rejected instead of resolved\nRejected to value: \u001b[31m[ValidationError: Password must be at least 6 characters]\u001b[39m\n    at expect (C:\\e-commerce-for-testing\\frontend\\node_modules\\expect\\build\\index.js:113:15)\n    at expectPuppeteer (C:\\e-commerce-for-testing\\frontend\\node_modules\\expect-puppeteer\\dist\\index.js:475:12)\n    at Object.expect (C:\\e-commerce-for-testing\\frontend\\src\\pages\\Auth\\Signin\\validations.test.js:21:11)\n    at Promise.then.completed (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (&lt;anonymous&gt;)\n    at callAsyncCircusFn (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:105:5)\n    at _runTest (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-runner\\build\\testWorker.js:106:12)&quot;
+          ],
+          &quot;fullName&quot;: &quot;Signin Form Validation should pass with valid data&quot;,
           &quot;invocations&quot;: 1,
           &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 1,
+          &quot;numPassingAsserts&quot;: 0,
           &quot;retryReasons&quot;: [],
-          &quot;status&quot;: &quot;passed&quot;,
+          &quot;status&quot;: &quot;failed&quot;,
           &quot;title&quot;: &quot;should pass with valid data&quot;
         }
       ],
-      &quot;failureMessage&quot;: null
+      &quot;failureMessage&quot;: &quot;\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSignin Form Validation › should require valid email format\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mrejects\u001b[2m.\u001b[22mtoThrow\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n    Expected pattern: \u001b[32m&#x2F;Email không hợp lệ&#x2F;\u001b[39m\n    Received message: \u001b[31m\&quot;Password must be at least 6 characters\&quot;\u001b[39m\n\n        \u001b[0m \u001b[90m  7 |\u001b[39m\n         \u001b[90m  8 |\u001b[39m   it(\u001b[32m\&quot;should require valid email format\&quot;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\n        \u001b[31m\u001b[1m&gt;\u001b[22m\u001b[39m\u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m expect(validations\u001b[33m.\u001b[39mvalidate({ email\u001b[33m:\u001b[39m \u001b[32m\&quot;invalid\&quot;\u001b[39m\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m \u001b[32m\&quot;12345\&quot;\u001b[39m\u001b[33m,\u001b[39m passwordConfirm\u001b[33m:\u001b[39m \u001b[32m\&quot;12345\&quot;\u001b[39m }))\u001b[33m.\u001b[39mrejects\u001b[33m.\u001b[39mtoThrow(\u001b[35m&#x2F;Email không hợp lệ&#x2F;\u001b[39m)\u001b[33m;\u001b[39m\n         \u001b[90m    |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n         \u001b[90m 10 |\u001b[39m   })\u001b[33m;\u001b[39m\n         \u001b[90m 11 |\u001b[39m\n         \u001b[90m 12 |\u001b[39m   it(\u001b[32m\&quot;should require password at least 5 characters\&quot;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\u001b[0m\n\n          \u001b[2mat createError (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:351:21)\u001b[22m\n          \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:104)\u001b[22m\n          \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n          \u001b[2mat StringSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n          \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:711:12\u001b[22m\n          \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n          \u001b[2mat finishTestRun (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:761:11)\u001b[22m\n          \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:124)\u001b[22m\n          \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n          \u001b[2mat StringSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n          \u001b[2mat StringSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:700:10)\u001b[22m\n          \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:795:58\u001b[22m\n          \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n          \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:1861:12\u001b[22m\n          \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n          \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:746:24)\u001b[22m\n          \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:711:12\u001b[22m\n          \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n          \u001b[2mat finishTestRun (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:761:11)\u001b[22m\n          \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:124)\u001b[22m\n          \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n          \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n          \u001b[2mat ObjectSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:700:10)\u001b[22m\n          \u001b[2mat ObjectSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:1841:11)\u001b[22m\n          \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:803:52\u001b[22m\n          \u001b[2mat ObjectSchema.validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:803:12)\u001b[22m\n          \u001b[2mat Object.validate (\u001b[22msrc&#x2F;pages&#x2F;Auth&#x2F;Signin&#x2F;validations.test.js\u001b[2m:9:30)\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m  7 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m  8 |\u001b[39m   it(\u001b[32m\&quot;should require valid email format\&quot;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m&gt;\u001b[22m\u001b[2m\u001b[39m\u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m expect(validations\u001b[33m.\u001b[39mvalidate({ email\u001b[33m:\u001b[39m \u001b[32m\&quot;invalid\&quot;\u001b[39m\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m \u001b[32m\&quot;12345\&quot;\u001b[39m\u001b[33m,\u001b[39m passwordConfirm\u001b[33m:\u001b[39m \u001b[32m\&quot;12345\&quot;\u001b[39m }))\u001b[33m.\u001b[39mrejects\u001b[33m.\u001b[39mtoThrow(\u001b[35m&#x2F;Email không hợp lệ&#x2F;\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                                                                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 10 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 11 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 12 |\u001b[39m   it(\u001b[32m\&quot;should require password at least 5 characters\&quot;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toThrow (\u001b[22m\u001b[2mnode_modules&#x2F;expect&#x2F;build&#x2F;index.js\u001b[2m:218:22)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toThrow (\u001b[22m\u001b[2m\u001b[0m\u001b[36msrc&#x2F;pages&#x2F;Auth&#x2F;Signin&#x2F;validations.test.js\u001b[39m\u001b[0m\u001b[2m:9:115)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSignin Form Validation › should require passwordConfirm to match password\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mrejects\u001b[2m.\u001b[22mtoThrow\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n    Expected pattern: \u001b[32m&#x2F;không khớp&#x2F;\u001b[39m\n    Received message: \u001b[31m\&quot;Password must be at least 6 characters\&quot;\u001b[39m\n\n        \u001b[0m \u001b[90m 15 |\u001b[39m\n         \u001b[90m 16 |\u001b[39m   it(\u001b[32m\&quot;should require passwordConfirm to match password\&quot;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\n        \u001b[31m\u001b[1m&gt;\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(validations\u001b[33m.\u001b[39mvalidate({ email\u001b[33m:\u001b[39m \u001b[32m\&quot;test@mail.com\&quot;\u001b[39m\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m \u001b[32m\&quot;12345\&quot;\u001b[39m\u001b[33m,\u001b[39m passwordConfirm\u001b[33m:\u001b[39m \u001b[32m\&quot;54321\&quot;\u001b[39m }))\u001b[33m.\u001b[39mrejects\u001b[33m.\u001b[39mtoThrow(\u001b[35m&#x2F;không khớp&#x2F;\u001b[39m)\u001b[33m;\u001b[39m\n         \u001b[90m    |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n         \u001b[90m 18 |\u001b[39m   })\u001b[33m;\u001b[39m\n         \u001b[90m 19 |\u001b[39m\n         \u001b[90m 20 |\u001b[39m   it(\u001b[32m\&quot;should pass with valid data\&quot;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\u001b[0m\n\n          \u001b[2mat createError (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:351:21)\u001b[22m\n          \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:104)\u001b[22m\n          \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n          \u001b[2mat StringSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n          \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:711:12\u001b[22m\n          \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n          \u001b[2mat finishTestRun (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:761:11)\u001b[22m\n          \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:124)\u001b[22m\n          \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n          \u001b[2mat StringSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n          \u001b[2mat StringSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:700:10)\u001b[22m\n          \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:795:58\u001b[22m\n          \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n          \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:1861:12\u001b[22m\n          \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n          \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:746:24)\u001b[22m\n          \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:711:12\u001b[22m\n          \u001b[2mat nextOnce (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:742:7)\u001b[22m\n          \u001b[2mat finishTestRun (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:761:11)\u001b[22m\n          \u001b[2mat handleResult (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:368:124)\u001b[22m\n          \u001b[2mat validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:391:5)\u001b[22m\n          \u001b[2mat ObjectSchema.runTests (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:756:7)\u001b[22m\n          \u001b[2mat ObjectSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:700:10)\u001b[22m\n          \u001b[2mat ObjectSchema._validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:1841:11)\u001b[22m\n          \u001b[2mat \u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:803:52\u001b[22m\n          \u001b[2mat ObjectSchema.validate (\u001b[22mnode_modules&#x2F;yup&#x2F;index.js\u001b[2m:803:12)\u001b[22m\n          \u001b[2mat Object.validate (\u001b[22msrc&#x2F;pages&#x2F;Auth&#x2F;Signin&#x2F;validations.test.js\u001b[2m:17:30)\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 15 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 16 |\u001b[39m   it(\u001b[32m\&quot;should require passwordConfirm to match password\&quot;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m&gt;\u001b[22m\u001b[2m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(validations\u001b[33m.\u001b[39mvalidate({ email\u001b[33m:\u001b[39m \u001b[32m\&quot;test@mail.com\&quot;\u001b[39m\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m \u001b[32m\&quot;12345\&quot;\u001b[39m\u001b[33m,\u001b[39m passwordConfirm\u001b[33m:\u001b[39m \u001b[32m\&quot;54321\&quot;\u001b[39m }))\u001b[33m.\u001b[39mrejects\u001b[33m.\u001b[39mtoThrow(\u001b[35m&#x2F;không khớp&#x2F;\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                                                                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 18 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 19 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 20 |\u001b[39m   it(\u001b[32m\&quot;should pass with valid data\&quot;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toThrow (\u001b[22m\u001b[2mnode_modules&#x2F;expect&#x2F;build&#x2F;index.js\u001b[2m:218:22)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toThrow (\u001b[22m\u001b[2m\u001b[0m\u001b[36msrc&#x2F;pages&#x2F;Auth&#x2F;Signin&#x2F;validations.test.js\u001b[39m\u001b[0m\u001b[2m:17:121)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mSignin Form Validation › should pass with valid data\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mresolves\u001b[2m.\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\n    Received promise rejected instead of resolved\n    Rejected to value: \u001b[31m[ValidationError: Password must be at least 6 characters]\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 19 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 20 |\u001b[39m   it(\u001b[32m\&quot;should pass with valid data\&quot;\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m&gt;\u001b[22m\u001b[2m\u001b[39m\u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect(validations\u001b[33m.\u001b[39mvalidate({ email\u001b[33m:\u001b[39m \u001b[32m\&quot;test@mail.com\&quot;\u001b[39m\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m \u001b[32m\&quot;12345\&quot;\u001b[39m\u001b[33m,\u001b[39m passwordConfirm\u001b[33m:\u001b[39m \u001b[32m\&quot;12345\&quot;\u001b[39m }))\u001b[33m.\u001b[39mresolves\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 22 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 23 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 24 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat expect (\u001b[22m\u001b[2mnode_modules&#x2F;expect&#x2F;build&#x2F;index.js\u001b[2m:113:15)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat expectPuppeteer (\u001b[22m\u001b[2mnode_modules&#x2F;expect-puppeteer&#x2F;dist&#x2F;index.js\u001b[2m:475:12)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.expect (\u001b[22m\u001b[2m\u001b[0m\u001b[36msrc&#x2F;pages&#x2F;Auth&#x2F;Signin&#x2F;validations.test.js\u001b[39m\u001b[0m\u001b[2m:21:11)\u001b[22m\u001b[2m\u001b[22m\n&quot;
+    },
+    {
+      &quot;leaks&quot;: false,
+      &quot;numFailingTests&quot;: 4,
+      &quot;numPassingTests&quot;: 0,
+      &quot;numPendingTests&quot;: 0,
+      &quot;numTodoTests&quot;: 0,
+      &quot;openHandles&quot;: [],
+      &quot;perfStats&quot;: {
+        &quot;end&quot;: 1748472614744,
+        &quot;runtime&quot;: 5444,
+        &quot;slow&quot;: true,
+        &quot;start&quot;: 1748472609300
+      },
+      &quot;skipped&quot;: false,
+      &quot;snapshot&quot;: {
+        &quot;added&quot;: 0,
+        &quot;fileDeleted&quot;: false,
+        &quot;matched&quot;: 0,
+        &quot;unchecked&quot;: 0,
+        &quot;uncheckedKeys&quot;: [],
+        &quot;unmatched&quot;: 0,
+        &quot;updated&quot;: 0
+      },
+      &quot;testFilePath&quot;: &quot;C:\\e-commerce-for-testing\\frontend\\src\\__tests__\\ui.test.js&quot;,
+      &quot;testResults&quot;: [
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Frontend UI&#x2F;UX&quot;
+          ],
+          &quot;duration&quot;: 49,
+          &quot;failureDetails&quot;: [
+            {}
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;TypeError: Cannot destructure property &#39;login&#39; of &#39;(0 , _AuthContext.useAuth)(...)&#39; as it is undefined.\n    at login (C:\\e-commerce-for-testing\\frontend\\src\\pages\\Auth\\Signin\\index.js:25:11)\n    at renderWithHooks (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:16305:18)\n    at mountIndeterminateComponent (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:20074:13)\n    at beginWork (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:21587:16)\n    at beginWork$1 (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:27426:14)\n    at performUnitOfWork (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:26560:12)\n    at workLoopSync (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:26466:5)\n    at renderRootSync (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:26434:7)\n    at recoverFromConcurrentError (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:25850:20)\n    at performConcurrentWorkOnRoot (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:25750:22)\n    at flushActQueue (C:\\e-commerce-for-testing\\frontend\\node_modules\\react\\cjs\\react.development.js:2667:24)\n    at act (C:\\e-commerce-for-testing\\frontend\\node_modules\\react\\cjs\\react.development.js:2582:11)\n    at C:\\e-commerce-for-testing\\frontend\\node_modules\\@testing-library\\react\\dist\\act-compat.js:47:25\n    at renderRoot (C:\\e-commerce-for-testing\\frontend\\node_modules\\@testing-library\\react\\dist\\pure.js:180:26)\n    at render (C:\\e-commerce-for-testing\\frontend\\node_modules\\@testing-library\\react\\dist\\pure.js:271:10)\n    at Object.&lt;anonymous&gt; (C:\\e-commerce-for-testing\\frontend\\src\\__tests__\\ui.test.js:8:11)\n    at Promise.then.completed (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (&lt;anonymous&gt;)\n    at callAsyncCircusFn (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:105:5)\n    at _runTest (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-runner\\build\\testWorker.js:106:12)&quot;
+          ],
+          &quot;fullName&quot;: &quot;Frontend UI&#x2F;UX Sign In button disabled when form invalid&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;retryReasons&quot;: [],
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;Sign In button disabled when form invalid&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Frontend UI&#x2F;UX&quot;
+          ],
+          &quot;duration&quot;: 8,
+          &quot;failureDetails&quot;: [
+            {}
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;TypeError: Cannot destructure property &#39;login&#39; of &#39;(0 , _AuthContext.useAuth)(...)&#39; as it is undefined.\n    at login (C:\\e-commerce-for-testing\\frontend\\src\\pages\\Auth\\Signin\\index.js:25:11)\n    at renderWithHooks (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:16305:18)\n    at mountIndeterminateComponent (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:20074:13)\n    at beginWork (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:21587:16)\n    at beginWork$1 (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:27426:14)\n    at performUnitOfWork (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:26560:12)\n    at workLoopSync (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:26466:5)\n    at renderRootSync (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:26434:7)\n    at recoverFromConcurrentError (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:25850:20)\n    at performConcurrentWorkOnRoot (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:25750:22)\n    at flushActQueue (C:\\e-commerce-for-testing\\frontend\\node_modules\\react\\cjs\\react.development.js:2667:24)\n    at act (C:\\e-commerce-for-testing\\frontend\\node_modules\\react\\cjs\\react.development.js:2582:11)\n    at C:\\e-commerce-for-testing\\frontend\\node_modules\\@testing-library\\react\\dist\\act-compat.js:47:25\n    at renderRoot (C:\\e-commerce-for-testing\\frontend\\node_modules\\@testing-library\\react\\dist\\pure.js:180:26)\n    at render (C:\\e-commerce-for-testing\\frontend\\node_modules\\@testing-library\\react\\dist\\pure.js:271:10)\n    at Object.&lt;anonymous&gt; (C:\\e-commerce-for-testing\\frontend\\src\\__tests__\\ui.test.js:14:11)\n    at Promise.then.completed (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (&lt;anonymous&gt;)\n    at callAsyncCircusFn (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:105:5)\n    at _runTest (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-runner\\build\\testWorker.js:106:12)&quot;
+          ],
+          &quot;fullName&quot;: &quot;Frontend UI&#x2F;UX Sign In button enabled when form valid&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;retryReasons&quot;: [],
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;Sign In button enabled when form valid&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Frontend UI&#x2F;UX&quot;
+          ],
+          &quot;duration&quot;: 15,
+          &quot;failureDetails&quot;: [
+            {}
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;TypeError: Cannot destructure property &#39;login&#39; of &#39;(0 , _AuthContext.useAuth)(...)&#39; as it is undefined.\n    at login (C:\\e-commerce-for-testing\\frontend\\src\\pages\\Auth\\Signup\\index.js:21:11)\n    at renderWithHooks (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:16305:18)\n    at mountIndeterminateComponent (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:20074:13)\n    at beginWork (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:21587:16)\n    at beginWork$1 (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:27426:14)\n    at performUnitOfWork (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:26560:12)\n    at workLoopSync (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:26466:5)\n    at renderRootSync (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:26434:7)\n    at recoverFromConcurrentError (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:25850:20)\n    at performConcurrentWorkOnRoot (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:25750:22)\n    at flushActQueue (C:\\e-commerce-for-testing\\frontend\\node_modules\\react\\cjs\\react.development.js:2667:24)\n    at act (C:\\e-commerce-for-testing\\frontend\\node_modules\\react\\cjs\\react.development.js:2582:11)\n    at C:\\e-commerce-for-testing\\frontend\\node_modules\\@testing-library\\react\\dist\\act-compat.js:47:25\n    at renderRoot (C:\\e-commerce-for-testing\\frontend\\node_modules\\@testing-library\\react\\dist\\pure.js:180:26)\n    at render (C:\\e-commerce-for-testing\\frontend\\node_modules\\@testing-library\\react\\dist\\pure.js:271:10)\n    at Object.&lt;anonymous&gt; (C:\\e-commerce-for-testing\\frontend\\src\\__tests__\\ui.test.js:22:11)\n    at Promise.then.completed (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (&lt;anonymous&gt;)\n    at callAsyncCircusFn (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:105:5)\n    at _runTest (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-runner\\build\\testWorker.js:106:12)&quot;
+          ],
+          &quot;fullName&quot;: &quot;Frontend UI&#x2F;UX Signup button enabled when form valid&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;retryReasons&quot;: [],
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;Signup button enabled when form valid&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;Frontend UI&#x2F;UX&quot;
+          ],
+          &quot;duration&quot;: 14,
+          &quot;failureDetails&quot;: [
+            {}
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;Error: No QueryClient set, use QueryClientProvider to set one\n    at useQueryClient (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-query\\lib\\react\\QueryClientProvider.js:36:11)\n    at useBaseQuery (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-query\\lib\\react\\useBaseQuery.js:24:61)\n    at useInfiniteQuery (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-query\\lib\\react\\useInfiniteQuery.js:14:41)\n    at Products (C:\\e-commerce-for-testing\\frontend\\src\\pages\\Products\\index.js:15:23)\n    at renderWithHooks (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:16305:18)\n    at mountIndeterminateComponent (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:20074:13)\n    at beginWork (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:21587:16)\n    at beginWork$1 (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:27426:14)\n    at performUnitOfWork (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:26560:12)\n    at workLoopSync (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:26466:5)\n    at renderRootSync (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:26434:7)\n    at recoverFromConcurrentError (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:25850:20)\n    at performConcurrentWorkOnRoot (C:\\e-commerce-for-testing\\frontend\\node_modules\\react-dom\\cjs\\react-dom.development.js:25750:22)\n    at flushActQueue (C:\\e-commerce-for-testing\\frontend\\node_modules\\react\\cjs\\react.development.js:2667:24)\n    at act (C:\\e-commerce-for-testing\\frontend\\node_modules\\react\\cjs\\react.development.js:2582:11)\n    at C:\\e-commerce-for-testing\\frontend\\node_modules\\@testing-library\\react\\dist\\act-compat.js:47:25\n    at renderRoot (C:\\e-commerce-for-testing\\frontend\\node_modules\\@testing-library\\react\\dist\\pure.js:180:26)\n    at render (C:\\e-commerce-for-testing\\frontend\\node_modules\\@testing-library\\react\\dist\\pure.js:271:10)\n    at Object.&lt;anonymous&gt; (C:\\e-commerce-for-testing\\frontend\\src\\__tests__\\ui.test.js:31:11)\n    at Promise.then.completed (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\utils.js:298:28)\n    at new Promise (&lt;anonymous&gt;)\n    at callAsyncCircusFn (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\utils.js:231:10)\n    at _callCircusTest (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:316:40)\n    at processTicksAndRejections (node:internal&#x2F;process&#x2F;task_queues:105:5)\n    at _runTest (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:252:3)\n    at _runTestsForDescribeBlock (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:126:9)\n    at _runTestsForDescribeBlock (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:121:9)\n    at run (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\run.js:71:3)\n    at runAndTransformResultsToJestFormat (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapterInit.js:122:21)\n    at jestAdapter (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-circus\\build\\legacy-code-todo-rewrite\\jestAdapter.js:79:19)\n    at runTestInternal (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-runner\\build\\runTest.js:367:16)\n    at runTest (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-runner\\build\\runTest.js:444:34)\n    at Object.worker (C:\\e-commerce-for-testing\\frontend\\node_modules\\jest-runner\\build\\testWorker.js:106:12)&quot;
+          ],
+          &quot;fullName&quot;: &quot;Frontend UI&#x2F;UX Products page renders&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;retryReasons&quot;: [],
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;Products page renders&quot;
+        }
+      ],
+      &quot;failureMessage&quot;: &quot;\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mFrontend UI&#x2F;UX › Sign In button disabled when form invalid\u001b[39m\u001b[22m\n\n    TypeError: Cannot destructure property &#39;login&#39; of &#39;(0 , _AuthContext.useAuth)(...)&#39; as it is undefined.\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 23 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 24 |\u001b[39m \u001b[36mfunction\u001b[39m \u001b[33mSignin\u001b[39m({ history }) {\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m&gt;\u001b[22m\u001b[2m\u001b[39m\u001b[90m 25 |\u001b[39m   \u001b[36mconst\u001b[39m { login } \u001b[33m&#x3D;\u001b[39m useAuth()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 26 |\u001b[39m   \u001b[36mconst\u001b[39m [showErrorIndicator\u001b[33m,\u001b[39m setShowErrorIndicator] \u001b[33m&#x3D;\u001b[39m useState(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 27 |\u001b[39m   \u001b[36mconst\u001b[39m [showPassword\u001b[33m,\u001b[39m setShowPassword] \u001b[33m&#x3D;\u001b[39m useState(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 28 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat login (\u001b[22m\u001b[2msrc&#x2F;pages&#x2F;Auth&#x2F;Signin&#x2F;index.js\u001b[2m:25:11)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat renderWithHooks (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:16305:18)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat mountIndeterminateComponent (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:20074:13)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat beginWork (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:21587:16)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat beginWork$1 (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:27426:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat performUnitOfWork (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:26560:12)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat workLoopSync (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:26466:5)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat renderRootSync (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:26434:7)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat recoverFromConcurrentError (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:25850:20)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat performConcurrentWorkOnRoot (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:25750:22)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat flushActQueue (\u001b[22m\u001b[2mnode_modules&#x2F;react&#x2F;cjs&#x2F;react.development.js\u001b[2m:2667:24)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat act (\u001b[22m\u001b[2mnode_modules&#x2F;react&#x2F;cjs&#x2F;react.development.js\u001b[2m:2582:11)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat \u001b[22m\u001b[2mnode_modules&#x2F;@testing-library&#x2F;react&#x2F;dist&#x2F;act-compat.js\u001b[2m:47:25\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat renderRoot (\u001b[22m\u001b[2mnode_modules&#x2F;@testing-library&#x2F;react&#x2F;dist&#x2F;pure.js\u001b[2m:180:26)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat render (\u001b[22m\u001b[2mnode_modules&#x2F;@testing-library&#x2F;react&#x2F;dist&#x2F;pure.js\u001b[2m:271:10)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.&lt;anonymous&gt; (\u001b[22m\u001b[2m\u001b[0m\u001b[36msrc&#x2F;__tests__&#x2F;ui.test.js\u001b[39m\u001b[0m\u001b[2m:8:11)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mFrontend UI&#x2F;UX › Sign In button enabled when form valid\u001b[39m\u001b[22m\n\n    TypeError: Cannot destructure property &#39;login&#39; of &#39;(0 , _AuthContext.useAuth)(...)&#39; as it is undefined.\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 23 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 24 |\u001b[39m \u001b[36mfunction\u001b[39m \u001b[33mSignin\u001b[39m({ history }) {\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m&gt;\u001b[22m\u001b[2m\u001b[39m\u001b[90m 25 |\u001b[39m   \u001b[36mconst\u001b[39m { login } \u001b[33m&#x3D;\u001b[39m useAuth()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 26 |\u001b[39m   \u001b[36mconst\u001b[39m [showErrorIndicator\u001b[33m,\u001b[39m setShowErrorIndicator] \u001b[33m&#x3D;\u001b[39m useState(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 27 |\u001b[39m   \u001b[36mconst\u001b[39m [showPassword\u001b[33m,\u001b[39m setShowPassword] \u001b[33m&#x3D;\u001b[39m useState(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 28 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat login (\u001b[22m\u001b[2msrc&#x2F;pages&#x2F;Auth&#x2F;Signin&#x2F;index.js\u001b[2m:25:11)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat renderWithHooks (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:16305:18)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat mountIndeterminateComponent (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:20074:13)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat beginWork (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:21587:16)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat beginWork$1 (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:27426:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat performUnitOfWork (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:26560:12)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat workLoopSync (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:26466:5)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat renderRootSync (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:26434:7)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat recoverFromConcurrentError (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:25850:20)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat performConcurrentWorkOnRoot (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:25750:22)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat flushActQueue (\u001b[22m\u001b[2mnode_modules&#x2F;react&#x2F;cjs&#x2F;react.development.js\u001b[2m:2667:24)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat act (\u001b[22m\u001b[2mnode_modules&#x2F;react&#x2F;cjs&#x2F;react.development.js\u001b[2m:2582:11)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat \u001b[22m\u001b[2mnode_modules&#x2F;@testing-library&#x2F;react&#x2F;dist&#x2F;act-compat.js\u001b[2m:47:25\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat renderRoot (\u001b[22m\u001b[2mnode_modules&#x2F;@testing-library&#x2F;react&#x2F;dist&#x2F;pure.js\u001b[2m:180:26)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat render (\u001b[22m\u001b[2mnode_modules&#x2F;@testing-library&#x2F;react&#x2F;dist&#x2F;pure.js\u001b[2m:271:10)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.&lt;anonymous&gt; (\u001b[22m\u001b[2m\u001b[0m\u001b[36msrc&#x2F;__tests__&#x2F;ui.test.js\u001b[39m\u001b[0m\u001b[2m:14:11)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mFrontend UI&#x2F;UX › Signup button enabled when form valid\u001b[39m\u001b[22m\n\n    TypeError: Cannot destructure property &#39;login&#39; of &#39;(0 , _AuthContext.useAuth)(...)&#39; as it is undefined.\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 19 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 20 |\u001b[39m \u001b[36mfunction\u001b[39m \u001b[33mSignup\u001b[39m({ history }) {\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m&gt;\u001b[22m\u001b[2m\u001b[39m\u001b[90m 21 |\u001b[39m   \u001b[36mconst\u001b[39m { login } \u001b[33m&#x3D;\u001b[39m useAuth()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 22 |\u001b[39m   \u001b[36mconst\u001b[39m [showPassword\u001b[33m,\u001b[39m setShowPassword] \u001b[33m&#x3D;\u001b[39m useState(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 23 |\u001b[39m   \u001b[36mconst\u001b[39m [showPasswordConfirm\u001b[33m,\u001b[39m setShowPasswordConfirm] \u001b[33m&#x3D;\u001b[39m useState(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 24 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat login (\u001b[22m\u001b[2msrc&#x2F;pages&#x2F;Auth&#x2F;Signup&#x2F;index.js\u001b[2m:21:11)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat renderWithHooks (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:16305:18)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat mountIndeterminateComponent (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:20074:13)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat beginWork (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:21587:16)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat beginWork$1 (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:27426:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat performUnitOfWork (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:26560:12)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat workLoopSync (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:26466:5)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat renderRootSync (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:26434:7)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat recoverFromConcurrentError (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:25850:20)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat performConcurrentWorkOnRoot (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:25750:22)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat flushActQueue (\u001b[22m\u001b[2mnode_modules&#x2F;react&#x2F;cjs&#x2F;react.development.js\u001b[2m:2667:24)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat act (\u001b[22m\u001b[2mnode_modules&#x2F;react&#x2F;cjs&#x2F;react.development.js\u001b[2m:2582:11)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat \u001b[22m\u001b[2mnode_modules&#x2F;@testing-library&#x2F;react&#x2F;dist&#x2F;act-compat.js\u001b[2m:47:25\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat renderRoot (\u001b[22m\u001b[2mnode_modules&#x2F;@testing-library&#x2F;react&#x2F;dist&#x2F;pure.js\u001b[2m:180:26)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat render (\u001b[22m\u001b[2mnode_modules&#x2F;@testing-library&#x2F;react&#x2F;dist&#x2F;pure.js\u001b[2m:271:10)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.&lt;anonymous&gt; (\u001b[22m\u001b[2m\u001b[0m\u001b[36msrc&#x2F;__tests__&#x2F;ui.test.js\u001b[39m\u001b[0m\u001b[2m:22:11)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mFrontend UI&#x2F;UX › Products page renders\u001b[39m\u001b[22m\n\n    No QueryClient set, use QueryClientProvider to set one\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 13 |\u001b[39m     isFetchingNextPage\u001b[33m,\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 14 |\u001b[39m     status\u001b[33m,\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m&gt;\u001b[22m\u001b[2m\u001b[39m\u001b[90m 15 |\u001b[39m   } \u001b[33m&#x3D;\u001b[39m useInfiniteQuery(\u001b[32m\&quot;products\&quot;\u001b[39m\u001b[33m,\u001b[39m fetchProductList\u001b[33m,\u001b[39m {\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 16 |\u001b[39m     getNextPageParam\u001b[33m:\u001b[39m (lastGroup\u001b[33m,\u001b[39m allGroups) \u001b[33m&#x3D;&gt;\u001b[39m {\u001b[22m\n\u001b[2m     \u001b[90m 17 |\u001b[39m       \u001b[36mconst\u001b[39m morePagesExist \u001b[33m&#x3D;\u001b[39m lastGroup\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mlength \u001b[33m&#x3D;&#x3D;&#x3D;\u001b[39m \u001b[35m12\u001b[39m\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 18 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat useQueryClient (\u001b[22m\u001b[2mnode_modules&#x2F;react-query&#x2F;lib&#x2F;react&#x2F;QueryClientProvider.js\u001b[2m:36:11)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat useBaseQuery (\u001b[22m\u001b[2mnode_modules&#x2F;react-query&#x2F;lib&#x2F;react&#x2F;useBaseQuery.js\u001b[2m:24:61)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat useInfiniteQuery (\u001b[22m\u001b[2mnode_modules&#x2F;react-query&#x2F;lib&#x2F;react&#x2F;useInfiniteQuery.js\u001b[2m:14:41)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Products (\u001b[22m\u001b[2msrc&#x2F;pages&#x2F;Products&#x2F;index.js\u001b[2m:15:23)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat renderWithHooks (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:16305:18)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat mountIndeterminateComponent (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:20074:13)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat beginWork (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:21587:16)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat beginWork$1 (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:27426:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat performUnitOfWork (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:26560:12)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat workLoopSync (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:26466:5)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat renderRootSync (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:26434:7)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat recoverFromConcurrentError (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:25850:20)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat performConcurrentWorkOnRoot (\u001b[22m\u001b[2mnode_modules&#x2F;react-dom&#x2F;cjs&#x2F;react-dom.development.js\u001b[2m:25750:22)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat flushActQueue (\u001b[22m\u001b[2mnode_modules&#x2F;react&#x2F;cjs&#x2F;react.development.js\u001b[2m:2667:24)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat act (\u001b[22m\u001b[2mnode_modules&#x2F;react&#x2F;cjs&#x2F;react.development.js\u001b[2m:2582:11)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat \u001b[22m\u001b[2mnode_modules&#x2F;@testing-library&#x2F;react&#x2F;dist&#x2F;act-compat.js\u001b[2m:47:25\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat renderRoot (\u001b[22m\u001b[2mnode_modules&#x2F;@testing-library&#x2F;react&#x2F;dist&#x2F;pure.js\u001b[2m:180:26)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat render (\u001b[22m\u001b[2mnode_modules&#x2F;@testing-library&#x2F;react&#x2F;dist&#x2F;pure.js\u001b[2m:271:10)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.&lt;anonymous&gt; (\u001b[22m\u001b[2m\u001b[0m\u001b[36msrc&#x2F;__tests__&#x2F;ui.test.js\u001b[39m\u001b[0m\u001b[2m:31:11)\u001b[22m\u001b[2m\u001b[22m\n&quot;
     },
     {
       &quot;leaks&quot;: false,
@@ -489,10 +619,10 @@
       &quot;numTodoTests&quot;: 0,
       &quot;openHandles&quot;: [],
       &quot;perfStats&quot;: {
-        &quot;end&quot;: 1748457890608,
-        &quot;runtime&quot;: 6872,
+        &quot;end&quot;: 1748472616128,
+        &quot;runtime&quot;: 6828,
         &quot;slow&quot;: true,
-        &quot;start&quot;: 1748457883736
+        &quot;start&quot;: 1748472609300
       },
       &quot;skipped&quot;: false,
       &quot;snapshot&quot;: {
@@ -510,7 +640,7 @@
           &quot;ancestorTitles&quot;: [
             &quot;NewProduct Component&quot;
           ],
-          &quot;duration&quot;: 641,
+          &quot;duration&quot;: 779,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;NewProduct Component can add and remove photos&quot;,
@@ -525,7 +655,7 @@
           &quot;ancestorTitles&quot;: [
             &quot;NewProduct Component&quot;
           ],
-          &quot;duration&quot;: 877,
+          &quot;duration&quot;: 946,
           &quot;failureDetails&quot;: [],
           &quot;failureMessages&quot;: [],
           &quot;fullName&quot;: &quot;NewProduct Component successfully submits form with valid data&quot;,
@@ -637,7 +767,7 @@
   ],
   &quot;rootDir&quot;: &quot;C:\\e-commerce-for-testing\\frontend&quot;,
   &quot;runTestsByPath&quot;: false,
-  &quot;seed&quot;: -1773622626,
+  &quot;seed&quot;: 2066040041,
   &quot;skipFilter&quot;: false,
   &quot;snapshotFormat&quot;: {
     &quot;escapeString&quot;: false,

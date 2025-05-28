@@ -35,5 +35,35 @@ services:
     volumes:
       - mongodb_data:/data/db
 
+  backend-test:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    command: ["pytest", "--maxfail=1", "--disable-warnings", "--tb=short", "--capture=tee-sys", "--junitxml=/usr/src/app/logs/pytest-report.xml"]
+    volumes:
+      - ./backend:/usr/src/app
+      - ./backend/logs:/usr/src/app/logs
+    environment:
+      - API_BASE=http://backend:10000
+      - NODE_ENV=test
+      - MONGO_URI=mongodb://mongodb:27017/ecommerce
+    depends_on:
+      - backend
+      - mongodb
+
+  frontend-test:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    command: ["npm", "run", "test:coverage"]
+    volumes:
+      - ./frontend:/app
+      - ./frontend/html-report:/app/html-report
+      - ./frontend/jest-stare:/app/jest-stare
+    environment:
+      - CI=true
+    depends_on:
+      - frontend
+
 volumes:
   mongodb_data:

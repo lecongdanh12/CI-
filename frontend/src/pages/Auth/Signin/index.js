@@ -125,7 +125,7 @@ function Signin({ history }) {
                 </Link>
               </Box>
 
-              <Button mt="4" width="full" type="submit">
+              <Button mt="4" width="full" type="submit" disabled={!(formik.dirty && formik.isValid) || formik.isSubmitting}>
                 Sign In
               </Button>
             </form>

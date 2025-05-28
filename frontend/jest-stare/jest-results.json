@@ -1,0 +1,431 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 4,
+  "numPassedTests": 19,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 4,
+  "numTotalTests": 19,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1748457880685,
+  "success": false,
+  "testResults": [
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 5,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1748457887551,
+        "runtime": 3815,
+        "slow": false,
+        "start": 1748457883736
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\e-commerce-for-testing\\frontend\\src\\pages\\Auth\\Signin\\validations.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Signin Form Validation"
+          ],
+          "duration": 23,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Signin Form Validation should require email and password",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should require email and password"
+        },
+        {
+          "ancestorTitles": [
+            "Signin Form Validation"
+          ],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Signin Form Validation should require valid email format",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should require valid email format"
+        },
+        {
+          "ancestorTitles": [
+            "Signin Form Validation"
+          ],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Signin Form Validation should require password at least 5 characters",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should require password at least 5 characters"
+        },
+        {
+          "ancestorTitles": [
+            "Signin Form Validation"
+          ],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Signin Form Validation should require passwordConfirm to match password",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should require passwordConfirm to match password"
+        },
+        {
+          "ancestorTitles": [
+            "Signin Form Validation"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Signin Form Validation should pass with valid data",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should pass with valid data"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 5,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1748457887551,
+        "runtime": 3816,
+        "slow": false,
+        "start": 1748457883735
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\e-commerce-for-testing\\frontend\\src\\pages\\Auth\\Signup\\validations.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Signup Form Validation"
+          ],
+          "duration": 23,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Signup Form Validation should require email and password",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should require email and password"
+        },
+        {
+          "ancestorTitles": [
+            "Signup Form Validation"
+          ],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Signup Form Validation should require valid email format",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should require valid email format"
+        },
+        {
+          "ancestorTitles": [
+            "Signup Form Validation"
+          ],
+          "duration": 2,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Signup Form Validation should require password at least 5 characters",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should require password at least 5 characters"
+        },
+        {
+          "ancestorTitles": [
+            "Signup Form Validation"
+          ],
+          "duration": 3,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Signup Form Validation should require passwordConfirm to match password",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should require passwordConfirm to match password"
+        },
+        {
+          "ancestorTitles": [
+            "Signup Form Validation"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Signup Form Validation should pass with valid data",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should pass with valid data"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 6,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1748457887573,
+        "runtime": 3838,
+        "slow": false,
+        "start": 1748457883735
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\e-commerce-for-testing\\frontend\\src\\pages\\Products\\validations.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "Product Edit Form Validation"
+          ],
+          "duration": 24,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Product Edit Form Validation should require all fields",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should require all fields"
+        },
+        {
+          "ancestorTitles": [
+            "Product Edit Form Validation"
+          ],
+          "duration": 5,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Product Edit Form Validation should require title at least 3 characters",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should require title at least 3 characters"
+        },
+        {
+          "ancestorTitles": [
+            "Product Edit Form Validation"
+          ],
+          "duration": 4,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Product Edit Form Validation should require description at least 5 characters",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should require description at least 5 characters"
+        },
+        {
+          "ancestorTitles": [
+            "Product Edit Form Validation"
+          ],
+          "duration": 10,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Product Edit Form Validation should require price to be a positive number",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should require price to be a positive number"
+        },
+        {
+          "ancestorTitles": [
+            "Product Edit Form Validation"
+          ],
+          "duration": 7,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Product Edit Form Validation should require at least one valid photo url",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should require at least one valid photo url"
+        },
+        {
+          "ancestorTitles": [
+            "Product Edit Form Validation"
+          ],
+          "duration": 1,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "Product Edit Form Validation should pass with valid data",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "should pass with valid data"
+        }
+      ],
+      "failureMessage": null
+    },
+    {
+      "leaks": false,
+      "numFailingTests": 0,
+      "numPassingTests": 3,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1748457890608,
+        "runtime": 6872,
+        "slow": true,
+        "start": 1748457883736
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "C:\\e-commerce-for-testing\\frontend\\src\\pages\\Products\\New.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "NewProduct Component"
+          ],
+          "duration": 641,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "NewProduct Component can add and remove photos",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "can add and remove photos"
+        },
+        {
+          "ancestorTitles": [
+            "NewProduct Component"
+          ],
+          "duration": 877,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "NewProduct Component successfully submits form with valid data",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 3,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "successfully submits form with valid data"
+        },
+        {
+          "ancestorTitles": [
+            "NewProduct Component"
+          ],
+          "duration": 0,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "NewProduct Component disables form elements during submission",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "status": "passed",
+          "title": "disables form elements during submission"
+        }
+      ],
+      "failureMessage": null
+    }
+  ],
+  "wasInterrupted": false
+}

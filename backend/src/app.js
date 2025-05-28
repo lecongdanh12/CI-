@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import './clients/db';
 import express from 'express';
-import Boom from 'boom';
+import Boom from '@hapi/boom';
 import cors from 'cors';
 import routes from './routes';
 

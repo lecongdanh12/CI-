@@ -1,5 +1,5 @@
-import JWT from "jsonwebtoken";
-import Boom from "@hapi/boom";
+"use strict";Object.defineProperty(exports, "__esModule", {value: true}); function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }var _jsonwebtoken = require('jsonwebtoken'); var _jsonwebtoken2 = _interopRequireDefault(_jsonwebtoken);
+var _boom = require('@hapi/boom'); var _boom2 = _interopRequireDefault(_boom);
 
 
 const signAccessToken = (data) => {
@@ -13,10 +13,10 @@ const signAccessToken = (data) => {
 			algorithm: "HS256",
 		};
 
-		JWT.sign(payload, process.env.JWT_SECRET, options, (err, token) => {
+		_jsonwebtoken2.default.sign(payload, process.env.JWT_SECRET, options, (err, token) => {
 			if (err) {
 				console.log(err);
-				reject(Boom.internal());
+				reject(_boom2.default.internal());
 			}
 
 			resolve(token);
@@ -27,13 +27,13 @@ const signAccessToken = (data) => {
 const verifyAccessToken = (req, res, next) => {
 	const authorizationToken = req.headers["authorization"];
 	if (!authorizationToken) {
-		next(Boom.unauthorized());
+		next(_boom2.default.unauthorized());
 	}
 
-	JWT.verify(authorizationToken, process.env.JWT_SECRET, { algorithms: ["HS256"] }, (err, payload) => {
+	_jsonwebtoken2.default.verify(authorizationToken, process.env.JWT_SECRET, { algorithms: ["HS256"] }, (err, payload) => {
 		if (err) {
 			return next(
-				Boom.unauthorized(
+				_boom2.default.unauthorized(
 					err.name === "JsonWebTokenError" ? "Unauthorized" : err.message
 				)
 			);
@@ -54,10 +54,10 @@ const signRefreshToken = (user_id) => {
 			issuer: "ecommerce.app",
 		};
 
-		JWT.sign(payload, process.env.JWT_REFRESH_SECRET, options, (err, token) => {
+		_jsonwebtoken2.default.sign(payload, process.env.JWT_REFRESH_SECRET, options, (err, token) => {
 			if (err) {
 				console.log(err);
-				reject(Boom.internal());
+				reject(_boom2.default.internal());
 			}
 
 			// redis.set(user_id, token, "EX", 180 * 24 * 60 * 60);
@@ -68,13 +68,13 @@ const signRefreshToken = (user_id) => {
 };
 
 const verifyRefreshToken = async (refresh_token) => {
-	return new Promise(async (resolve, reject) => {		JWT.verify(
+	return new Promise(async (resolve, reject) => {		_jsonwebtoken2.default.verify(
 			refresh_token,
 			process.env.JWT_REFRESH_SECRET,
 			{ algorithms: ["HS256"] },
 			async (err, payload) => {
 				if (err) {
-					return reject(Boom.unauthorized());
+					return reject(_boom2.default.unauthorized());
 				}
 
 				const { user_id } = payload;
@@ -92,9 +92,9 @@ const verifyRefreshToken = async (refresh_token) => {
 	});
 };
 
-export {
-	signAccessToken,
-	verifyAccessToken,
-	signRefreshToken,
-	verifyRefreshToken,
-};
+
+
+
+
+
+exports.signAccessToken = signAccessToken; exports.verifyAccessToken = verifyAccessToken; exports.signRefreshToken = signRefreshToken; exports.verifyRefreshToken = verifyRefreshToken;

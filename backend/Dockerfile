@@ -17,5 +17,8 @@ COPY . .
 # Expose the port your application will run on (default for many Node.js apps is 3000)
 EXPOSE 10000
 
+# Build the app
+RUN npm run build
+
 # Define the command to run your application
-CMD ["npm", "run", "dev"]
+CMD ["node", "dist/app.js"]

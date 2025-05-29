@@ -9,15 +9,12 @@ import {
 } from "../../helpers/jwt";
 
 // validations
-import ValidationSchema from "./validations";
+import { RegisterSchema, LoginSchema } from "./validations";
 
 
 const Register = async (req, res, next) => {
 	const input = req.body;
-		
-
-	const { error } = ValidationSchema.validate(input);
-
+	const { error } = RegisterSchema.validate(input);
 	if (error) {
 		return next(Boom.badRequest(error.details[0].message));
 	}
@@ -54,9 +51,7 @@ const Register = async (req, res, next) => {
 
 const Login = async (req, res, next) => {
 	const input = req.body;
-
-	const { error } = ValidationSchema.validate(input);
-
+	const { error } = LoginSchema.validate(input);
 	if (error) {
 		return next(Boom.badRequest(error.details[0].message));
 	}

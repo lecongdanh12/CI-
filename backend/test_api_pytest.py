@@ -7,17 +7,27 @@ BASE_URL = os.getenv("API_BASE", "http://localhost:4000")
 def test_signup_success():
     payload = {"email": "pytestuser@example.com", "password": "pytest123", "passwordConfirm": "pytest123"}
     r = requests.post(f"{BASE_URL}/auth/register", json=payload)
+    print('SIGNUP:', r.status_code, r.text)
     assert r.status_code in [200, 201, 400]  # 400 nếu user đã tồn tại
+    if r.status_code in [200, 201]:
+        assert "user" in r.json() or "_id" in r.json().get("user", {})
+
 
 def test_signin_success():
     payload = {"email": "pytestuser@example.com", "password": "pytest123"}
     r = requests.post(f"{BASE_URL}/auth/login", json=payload)
+    print('SIGNIN SUCCESS:', r.status_code, r.text)
     assert r.status_code == 200
-    assert "accessToken" in r.json() or "user" in r.json()
+    data = r.json()
+    assert "accessToken" in data or "user" in data
+    if "user" in data:
+        assert data["user"].get("email") == "pytestuser@example.com"
+
 
 def test_signin_fail():
     payload = {"email": "pytestuser@example.com", "password": "sai"}
     r = requests.post(f"{BASE_URL}/auth/login", json=payload)
+    print('SIGNIN FAIL:', r.status_code, r.text)
     assert r.status_code == 401 or r.status_code == 400
 
 # --- PRODUCT TESTS ---

@@ -19,11 +19,11 @@ import { useFormik } from "formik";
 import validationSchema from "./validations";
 import { fetchLogin } from "../../../api";
 import { useAuth } from "../../../contexts/AuthContext";
-import { Link as RouterLink, useHistory } from "react-router-dom";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
 
 function Login() {
   const { login } = useAuth();
-  const history = useHistory();
+  const navigate = useNavigate();
   const [showErrorIndicator, setShowErrorIndicator] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
@@ -46,7 +46,7 @@ function Login() {
           password: values.password,
         });
         login(loginResponse);
-        history.push("/profile");
+        navigate("/profile");
       } catch (e) {
         bag.setErrors({ general: e.response?.data?.message || "Đăng nhập thất bại" });
       }
